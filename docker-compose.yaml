@@ -2,6 +2,8 @@ services:
   caddy:
     container_name: caddy
     image: caddy
+    cap_add:
+      - NET_ADMIN
     ports:
       - "80:80"
       - "443:443"
