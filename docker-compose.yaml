@@ -1,1 +1,17 @@
+version: '3.8'
 
+services:
+  caddy:
+    container_name: caddy
+    image: caddy
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    volumes:
+      - './Caddyfile:/etc/caddy/Caddyfile'
+  api:
+    container_name: directus
+    image: directus/directus
+    env_file: 
+      - .env
