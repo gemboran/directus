@@ -15,7 +15,7 @@ services:
     image: directus/directus
     env_file: 
       - .env
-    environtment:
+    environment:
       NODE_TLS_REJECT_UNAUTHORIZE=0
     volumes:
       - './ca.pem:/directus/ca.pem'
