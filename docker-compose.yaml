@@ -12,7 +12,7 @@ services:
       - './Caddyfile:/etc/caddy/Caddyfile'
   api:
     container_name: directus
-    image: directus/directus:10.10.4
+    image: directus/directus:10.8.2
     env_file: 
       - .env
     volumes:
