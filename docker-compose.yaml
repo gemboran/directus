@@ -12,8 +12,10 @@ services:
       - './Caddyfile:/etc/caddy/Caddyfile'
   api:
     container_name: directus
-    image: directus/directus:10.8.2
+    image: directus/directus
     env_file: 
       - .env
+    environtment:
+      NODE_TLS_REJECT_UNAUTHORIZE=0
     volumes:
       - './ca.pem:/directus/ca.pem'
