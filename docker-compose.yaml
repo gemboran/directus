@@ -17,10 +17,3 @@ services:
       - .env
     volumes:
       - './ca.pem:/directus/ca.pem'
-  docs:
-    container_name: swagger
-    image: swaggerapi/swagger-ui
-    environment:
-      - SWAGGER_JSON_URL=https://api.buatan.id/server/specs/oas?access_token=QdcoI7nG08KUCLBnwQdrU9EhFu9zuKQ2
-    ports:
-      - 1111:8080
