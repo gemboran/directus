@@ -2,6 +2,10 @@ api.buatan.id {
     reverse_proxy api:8055
 }
 
-docs.buatan.id {
+docs.buatan.id/80 {
     reverse_proxy docs:80
+}
+
+docs.buatan.id/8080 {
+    reverse_proxy docs:8080
 }

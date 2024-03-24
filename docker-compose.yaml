@@ -22,5 +22,3 @@ services:
     image: swaggerapi/swagger-ui
     environment:
       - SWAGGER_JSON_URL=https://api.buatan.id/server/specs/oas?access_token=QdcoI7nG08KUCLBnwQdrU9EhFu9zuKQ2
-    ports:
-      - 80:8080
