@@ -13,7 +13,5 @@ services:
   api:
     container_name: directus
     image: directus/directus
-    env_file: 
-      - .env
     volumes:
       - './ca.pem:/directus/ca.pem'
