@@ -19,5 +19,3 @@ services:
       - '.env'
     ports:
       - "8055:8055"
-    environment:
-      - NODE_TLS_REJECT_UNAUTHORIZED=0
