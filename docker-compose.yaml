@@ -15,3 +15,7 @@ services:
     image: directus/directus
     volumes:
       - './ca.pem:/directus/ca.pem'
+    env_file:
+      - '.env'
+    ports:
+      - "8055:8055"
